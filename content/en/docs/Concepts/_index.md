@@ -3,15 +3,13 @@ title: "Concepts"
 linkTitle: "Concepts"
 weight: 4
 description: >
-  What does your user need to understand about your project in order to use it - or potentially contribute to it? 
+  This gives an overview of the main concepts in the application.
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+Every event or course consists of 1 or more session groups, and each session group has 1 or more sessions.
+A session represents one activity within the event or within the course.
+These sessions can be organised at different times and places.
+If you do not wish to make such a distinction, you can leave your event at a single session.
 
-For many projects, users may not need much information beyond the information in the [Overview](/docs/overview/), so this section is **optional**. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project (or to not make mistakes when using it) put that information in this section. For example, you may want to add some conceptual pages if you have a large project with many components and a complex architecture.
-
-Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.
-
-
+Session groups are used to split an event or course into different groups. The sessions are still the same content-wise, but may be organised in different times and places than the sessions in other groups. Splitting into groups effectively allows to organise the same event multiple times.
+Again, if you do not wish to utilise this, you can keep the amount of session groups to the default of one group.

@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "Crepes documentation"
 
 # Language settings
 contentDir = "content/en"
@@ -23,13 +23,13 @@ category = "categories"
 
 [params.taxonomy]
 # set taxonomyCloud = [] to hide taxonomy clouds
-taxonomyCloud = ["tags", "categories"] 
+taxonomyCloud = []#["tags", "categories"] 
 
 # If used, must have same length as taxonomyCloud
-taxonomyCloudTitle = ["Tag Cloud", "Categories"] 
+taxonomyCloudTitle = []#["Tag Cloud", "Categories"] 
 
 # set taxonomyPageHeader = [] to hide taxonomies on the page headers
-taxonomyPageHeader = ["tags", "categories"] 
+taxonomyPageHeader = []#["tags", "categories"] 
 
 
 # Highlighting config
@@ -54,32 +54,17 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
+# id = "UA-00000000-0"
 
 # Language configuration
 
 [languages]
 [languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
+title = "Crepes"
+description = "Crepes documentation"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
-contentDir = "content/fa"
-time_format_default = "2006.01.02"
-time_format_blog = "2006.01.02"
 
 [markup]
   [markup.goldmark]
@@ -98,8 +83,8 @@ time_format_blog = "2006.01.02"
 section = ["HTML", "print", "RSS"]
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "nielsdos"
+#privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -123,19 +108,19 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/nielsdos/crepes-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/nielsdos/crepes"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
 
 # Uncomment this if your GitHub repo does not have "main" as the default branch,
 # or specify a new value if you want to reference another branch in your GitHub links
-github_branch= "master"
+github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+# gcs_engine_id = "d72aa9b2712488cc3"
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
@@ -175,41 +160,41 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = false
+enable = true
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-[[params.links.user]]
-  name = "User mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-  name ="Twitter"
-  url = "https://example.org/twitter"
-  icon = "fab fa-twitter"
-  desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-  name = "Stack Overflow"
-  url = "https://example.org/stack"
-  icon = "fab fa-stack-overflow"
-  desc = "Practical questions and curated answers"
+#[[params.links.user]]
+#  name = "User mailing list"
+#  url = "https://example.org/mail"
+#  icon = "fa fa-envelope"
+#  desc = "Discussion and help from your fellow users"
+#[[params.links.user]]
+#  name ="Twitter"
+#  url = "https://example.org/twitter"
+#  icon = "fab fa-twitter"
+#  desc = "Follow us on Twitter to get the latest news!"
+#[[params.links.user]]
+#  name = "Stack Overflow"
+#  url = "https://example.org/stack"
+#  icon = "fab fa-stack-overflow"
+#  desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/google/docsy"
+  url = "https://github.com/nielsdos/crepes"
   icon = "fab fa-github"
   desc = "Development takes place here!"
-[[params.links.developer]]
-  name = "Slack"
-  url = "https://example.org/slack"
-  icon = "fab fa-slack"
-  desc = "Chat with other project developers"
-[[params.links.developer]]
-  name = "Developer mailing list"
-  url = "https://example.org/mail"
-  icon = "fa fa-envelope"
-  desc = "Discuss development issues around the project"
+#[[params.links.developer]]
+#  name = "Slack"
+#  url = "https://example.org/slack"
+#  icon = "fab fa-slack"
+#  desc = "Chat with other project developers"
+#[[params.links.developer]]
+#  name = "Developer mailing list"
+#  url = "https://example.org/mail"
+#  icon = "fa fa-envelope"
+#  desc = "Discuss development issues around the project"
 
 # hugo module configuration
 

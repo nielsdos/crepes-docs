@@ -4,3 +4,8 @@ Add styles or override variables from the theme here.
 
 */
 
+.lead-shadow {
+    --text-shadow-color: rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 1px var(--text-shadow-color), 0 0 2px var(--text-shadow-color);
+    font-weight: normal !important;
+}
